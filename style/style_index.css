@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh; 
+    background-color: #084f8e;
+    background-image: url(../img/sky2.png), linear-gradient(0deg, #084f8e, #083466 80%);
+    position: relative;
+    overflow: hidden;
+    /* padding: 10px 5%; */
+}
+
+.container2 {
+    height: 500px;
+    background-color: #ffffff;
+ 
+}
+
+.container h1{
+    padding-left: 15px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; 
+    padding-right: 15px;
+}
+
+nav ul li {
+    margin:20px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    margin-left: 5px;
+    height: 40px;
+    margin-bottom: -4px;
+    background: rgba(255, 255, 255, 1);
+    -webkit-animation: cursor_anim 1s infinite;
+    position: absolute;
+}
+
+@-webkit-keyframes cursor_anim {
+    0% {
+        background: white;
+    }
+    45% {
+        background: white;
+    }
+    46% {
+        background: #084f8e;
+    }
+    89% {
+        background: #084f8e;
+    }
+    90% {
+        background: white;
+    }
+    100% {
+        background: white;
+    }
+}
+
+@-webkit-keyframes moon_anim {
+    0% {
+        -webkit-transform: scale(0.9);
+        box-shadow: 0 0 80px rgba(255, 255, 255, 0.6);
+    }
+    2% {
+        -webkit-transform: scale(1);
+        box-shadow: 0 0 80px rgba(255, 255, 255, 1);
+    }
+    20% {
+        -webkit-transform: scale(1);
+        box-shadow: 0 0 80px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        -webkit-transform: scale(1.2);
+        -webkit-transform: rotate(365deg);
+        box-shadow: 0 0 80px rgba(255, 255, 255, 1);
+    }
+}
+
+.moon {
+    border-radius: 100%;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    box-shadow: 0 0 80px rgba(255, 255, 255, 0.6);
+    width: 200px;
+    transition: 1s linear all;
+    animation: moon_anim 200s infinite;
+    animation-timing-function: linear;
+    z-index: 0; /* Встановлення z-index, щоб місяць був вище тексту */
+}
+
+.blok {
+    position: absolute;
+    top: 41%;
+    left: 45%;    
+    transform: translateY(-50%);
+    z-index: 2; /* Встановлення z-index, щоб текст був вище місяця */
+}
+
+.blok h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: 10;
+
+}
+
+.content {
+    width: 500px;
+    color: #ffffff;
+}
+
+.btn {
+    margin-top: 30px;
+    color: #084f8e;
+    width: 220px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background: rgb(255, 255, 255) !important;
+    box-shadow: 0 0 10px #b5fb98;
+    color: black !important;
+}
+
+@-webkit-keyframes cloud_anim_right {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+@-webkit-keyframes cloud_anim_left{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2000px 0;
+    }
+}
+
+.clouds {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    animation-timing-function: linear;
+}
+
+
+#clouds3 {
+    margin-top: -30px;
+    background-position-x: -140px;
+    opacity: .7;
+    -webkit-animation: cloud_anim_right 150s infinite;
+    animation-timing-function: linear;
+    background: url(../img/clouds3.png);
+}
+
+#clouds1 {
+    margin-top: 0;
+    animation-timing-function: linear;
+    background: url(../img/clouds1.png);
+}
+
+#clouds2 {
+    -webkit-animation: cloud_anim_left 150s infinite;
+    margin-top: 20px;
+    animation-timing-function: linear;
+    background: url(../img/clouds2.png);
+    border-bottom: 10px solid white;
+}
+
+@media screen and (max-width: 768px) {
+    .moon {
+        display: none; 
+    }
+    .blok {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .blok h1 {
+        text-align: center; 
+    }
+     
+    .btn{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+   
+    
+}
