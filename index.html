@@ -11,8 +11,8 @@
         <nav>
             <h1 style="color: aliceblue;">TypingClub</h1>
             <ul>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li id="registerButton"><a href="register.html">Register</a></li>
+                <li id="logoutButton" style="display: none;"><button onclick="logout()">Logout</button></li>
             </ul>
         </nav>
         <div class="content">
@@ -23,7 +23,7 @@
                     <span id="text"> for free!</span>
                     <i class="cursor"></i>
                 </h1>
-                <button class="btn" type="button">Get started</button>
+                <button class="btn" type="button" >Get started</button>
             </div>
         </div>
         <div>
@@ -31,14 +31,28 @@
             <div id="clouds1" class="clouds" style="bottom: 1vh;"></div>
             <div id="clouds2" class="clouds" style="background-position-x: -2388.96px; bottom: 0vh;"></div>
         </div>
-        
-
-        
     </div>
-    <div class="container2">
-       
+    <div class="container2"></div>
 
-    </div>
- 
+    <script>
+        // Перевірка статусу реєстрації
+        function checkRegistrationStatus() {
+            const isRegistered = localStorage.getItem('isRegistered');
+            return isRegistered === 'true';
+        }
+
+        // Зміна тексту кнопки в залежності від статусу реєстрації
+        window.onload = function () {
+            const isRegistered = checkRegistrationStatus();
+            const registerButton = document.getElementById('registerButton');
+            const logoutButton = document.getElementById('logoutButton');
+
+            if (isRegistered) {
+                registerButton.innerHTML = '<a href="profile.html"> Ваш профіль </a>'; 
+            } 
+        };
+
+      
+    </script>
 </body>
 </html>
