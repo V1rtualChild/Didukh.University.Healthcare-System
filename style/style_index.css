@@ -14,31 +14,23 @@
     /* padding: 10px 5%; */
 }
 
+
 .container2 {
     height: 500px;
     background-color: #ffffff;
- 
-}
-
-.container h1{
-    padding-left: 15px;
-
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 30px;
 }
 
 nav ul {
     list-style-type: none;
     display: flex; 
-    padding-right: 15px;
-}
-
-nav ul li {
-    margin:20px; 
+    gap: 30px;
 }
 
 nav ul li a {
