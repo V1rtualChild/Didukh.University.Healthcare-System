@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    margin: 0  auto;
+}
+
+
+/* ------ BLOCK LEFT ------ */
+
+
+/* .block_left{
+    margin-right: 300px;
+} */
+
+.img img{
+    width: 750px;
+}
+
+
+/* ------ BLOCK RIGTH ------ */
+
+
+.block_rigth{
+    box-sizing: border-box;
+}
+
+/* .logo{
+    display: flex;
+    justify-content: center;
+} */
+
+.logo img{
+    width: 120px;
+    text-align: right;
+}
+
+h2{
+    font-size: 1.4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 1.2em;
+}
+
+/* НИЖЧЕ ЙДЕ ФОРМА */
+
+.form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.form input{
+    font-size: 1em;
+    padding: 10px 0 10px 10px;
+    border: 1.3px solid #81818152;
+    border-radius: 5px;
+    width: 15em;
+}
+
+
+.google-link {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #5383ec;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+
+    padding: 10px;
+    font-size: 1.1em;
+    gap: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 15em;
+}
+
+.google-link:hover {
+    background-color: #517cd8;
+}
+
+.logo-png{
+    height: 20px;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.button-signUp {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #5383ec00;
+    color: black;
+    border-radius: 5px;
+    border: 1.3px solid #81818152;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    gap: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 15em;
+}
+
+.button-signUp:hover {
+    background-color: #00000007;
+} 
+

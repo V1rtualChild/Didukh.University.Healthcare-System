@@ -1,4 +1,3 @@
-
 let params = {}
 
 let regex = /([^&=]+)=([^&]*)/g, m

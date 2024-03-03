@@ -3,22 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="server.js"></script>
-    <link rel="stylesheet" href="style/style_register.css">
     <title>Реєстрація</title>
+    <link rel="stylesheet" href="./css/register.css">
 </head>
 <body>
-    <h2>Форма реєстрації</h2>
-    <form action="/register" method="POST">
-        <label for="name">Ім'я:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="email">Електронна пошта:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="password">Пароль:</label><br>
-        <input type="password" id="password" name="password" required><br>
-        <button type="submit">Зареєструватися</button>
-        <Button onclick="signIn()">SignIn</Button>
-    </form>
+
+    <div class="block">
+        <div class="block_left">
+            <div class="img">
+                <img src="./img/reg-page.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="block_rigth">
+            <div class="logo">
+                <h2>Sign in</h2>
+                <!-- <img src="./img/logoipsum-297 1.png" alt=""> -->
+            </div>
+            <div class="form-container">
+                <form class="form" action="/register" method="POST">
+                    <input type="text" id="name" name="name" required placeholder="Name">
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                    <input type="text" id="mobile" name="mobile" required placeholder="Phone">
+                    <input type="password" id="password" name="password" required placeholder="Password">
+                </form>
+                <div class="button-container">
+                    <div class="button-signUp">
+                        <a class="">Sign up</a>
+                    </div>
+                    <div class="btn-signUp-google">
+                        <a href="#" class="google-link" onclick="signIn()">
+                            <img class="logo-png" src="./img/google.png" alt="">Sign up with Google
+                        </a>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+    
+
+
+    <script src="server.js"></script>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

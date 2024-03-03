@@ -8,7 +8,7 @@ function signIn() {
     form.setAttribute('action', oauth2Endpoint)
 
     let params = {
-        "client_id": "89192876707-q61vsvn6utggb1v0qkt870gcg6h9mjl7.apps.googleusercontent.com",
+        "client_id": "355923950179-cmtb3t5umgttfb2h1bnni91qgifhqfhb.apps.googleusercontent.com",
         "redirect_uri": "http://127.0.0.1:5500/profile.html",
         "response_type": "token",
         "scope": "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly",
