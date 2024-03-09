@@ -1,11 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
 *{
     padding: 0;
     margin: 0;
 }
+
+/* body{
+    background-color: #F0EDE8;
+} */
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 84px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.header-btn a {
+    margin-left: 65px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.header-btn .a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #143A83;
+}
+
+.signup {
+    background-color: #143A83;
+    padding: 9px 41px;
+    border-radius: 32px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
 
 .block{
     display: flex;
@@ -42,16 +86,6 @@
     margin-right: 15%;
 }
 
-/* .logo{
-    display: flex;
-    justify-content: center;
-} */
-
-.logo img{
-    width: 120px;
-    text-align: right;
-}
-
 h2{
     font-size: 1.4em;
     font-family: "Roboto", sans-serif;
@@ -74,6 +108,8 @@ h2{
     border-radius: 5px;
     width: 15em;
     padding-right: 33.5px;
+    outline: none;
+    background-color: transparent;
 }
 
 .form input::placeholder{
@@ -115,8 +151,8 @@ h2{
     justify-content: center;
     align-items: center; */
     text-decoration: none;
-    background-color: #5383ec00;
-    color: black;
+    background-color: #143A83;
+    color: white;
     border-radius: 5px;
     border: 1.3px solid #81818152;
     transition: background-color 0.2s;
@@ -130,7 +166,7 @@ h2{
 }
 
 .button-signUp button:hover {
-    background-color: #00000007;
+    background-color: #335aa2;
 }
 
 .sing-in{
