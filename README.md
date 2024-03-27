@@ -42,4 +42,4 @@ The project is structured into two main parts: the front-end and the back-end.
 - Set up Azure environment for project deployment.
 - Configure CI/CD pipeline for automated deployment.
 - Create Getting Started documentation for local project setup.✅
-- Develop Unit Tests for User Registration and Authentication feature.
+- Develop Unit Tests for User Registration and Authentication feature. ✅
