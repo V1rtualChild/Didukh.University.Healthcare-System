@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User profile</title>
+    <link rel="icon" href="./img/healthcare-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/profile.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="block-left">
+            <div class="mini-profile">
+                <div class="mini-profile-img">
+                    <img id="image" src="" alt="">
+                </div>
+                <div class="mini-name-profile">
+                    <p class="txt-welcome">Welcome Back!</p>
+                    <p id="name" class="name-patient"></p>
+                </div>
+            </div>
+
+            <div class="dashboard">
+                <button>
+                    <img src="img/icons/dashboard.png" alt="">
+                    <p>Dashboard</p>
+                </button>
+            </div>
+            <div class="other-btn">
+                <button id="settingBtn" class="selected">
+                    <img src="img/icons/setting.png" alt="">
+                    <p>Setting</p>
+                </button>
+            </div>
+            <div class="other-btn">
+                <button>
+                    <img src="img/icons/chat.png" alt="">
+                    <p>Chat</p>
+                </button>
+            </div>
+            <div class="other-btn">
+                <button>
+                    <img src="img/icons/logout.png" alt="">
+                    <p>Log out</p>
+                </button>
+            </div>
+            <div class="backToHeadPage">
+                <a href="/">Back to the home page</a>
+            </div>
+        </div>
+
+        <div id="hiddenCenterBlock" class="block-center">
+            <div class="other-btn-2">
+                <button id="accountSettingBtn" class="selected">
+                    <img src="img/icons/user.png" alt="">
+                    <p>Account Setting</p>
+                </button>
+            </div>
+            <div class="other-btn-2">
+                <button>
+                    <img src="img/icons/notification.png" alt="">
+                    <p>Notification</p>
+                </button>
+            </div>
+        </div>
+
+        <div id="hiddenRigthBlock" class="block-right">
+            <div class="head-img-profile">
+                <div class="">
+                    <img id="head-image" src="" alt="">
+                </div>
+                <a href="">Change photo</a>
+            </div>
+
+            <form class="change-info-profile" action="">
+                <div class="">
+                    <label for="">First Name</label>
+                    <input type="text" name="name" id="" placeholder="">
+                </div>
+                <div class="">
+                    <label for="">Last Name</label>
+                    <input type="text" name="name" id="">
+                </div>
+                <div class="">
+                    <label for="">Email Address</label>
+                    <input type="text" name="name" id="">
+                </div>
+                <div class="">
+                    <label for="">Contact Number</label>
+                    <input type="text" name="name" id="">
+                </div>           
+            </form>
+
+            <div class="save-change">
+                <div>
+                    <p>Save the changes made?</p>
+                </div>
+                <div class="btn">
+                    <button id="btn-cancel">Cancel</button>
+                    <button id="btn-save">Save</button>
+                </div>           
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="profile.js"></script>
+</body>
+</html>
