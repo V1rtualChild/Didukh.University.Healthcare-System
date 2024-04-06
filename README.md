@@ -39,7 +39,7 @@ The project is structured into two main parts: the front-end and the back-end.
 
 ### Week 1:
 - Implement feature: User Registration and Authentication with Google account (OAuth 2.0). ✅
-- Set up Azure environment for project deployment.
+- Set up Azure environment for project deployment. ✅
 - Configure CI/CD pipeline for automated deployment.
 - Create Getting Started documentation for local project setup. ✅
 - Develop Unit Tests for User Registration and Authentication feature. ✅
