@@ -51,3 +51,16 @@ The project is structured into two main parts: the front-end and the back-end.
 - Create Postman collection for testing User Authentication endpoints.
 - Develop Unit Tests for Welcome Email Notification feature. ✅
 
+## Week 3:
+- Implement feature: Electronic Health Records (EHRs) management system.
+- Deploy project to Azure cloud platform.
+- Perform integration testing for EHRs management system.
+- Document project tasks decomposition for reference.
+- Develop Unit Tests for EHRs management system.
+
+## Week 4:
+- Implement feature: Telemedicine Capabilities for remote consultations. ✅
+- Optimize project infrastructure for scalability and performance.
+- Conduct load testing on telemedicine capabilities.
+- Update README.md file with project architecture overview.
+- Develop Unit Tests for Telemedicine Capabilities.
