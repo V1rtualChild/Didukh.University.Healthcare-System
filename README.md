@@ -38,8 +38,16 @@ The project is structured into two main parts: the front-end and the back-end.
 ## Project Task Decomposition
 
 ### Week 1:
-- Implement feature: User Registration and Authentication with Google account (OAuth 2.0).✅
-- Set up Azure environment for project deployment.
+- Implement feature: User Registration and Authentication with Google account (OAuth 2.0). ✅
+- Set up Azure environment for project deployment. ✅
 - Configure CI/CD pipeline for automated deployment.
-- Create Getting Started documentation for local project setup.✅
-- Develop Unit Tests for User Registration and Authentication feature.
+- Create Getting Started documentation for local project setup. ✅
+- Develop Unit Tests for User Registration and Authentication feature. ✅
+
+### Week 2:
+- Implement feature: Welcome Email Notification for new users. ✅
+- Design architecture diagram for the project.
+- Configure continuous integration with GitHub repository.
+- Create Postman collection for testing User Authentication endpoints.
+- Develop Unit Tests for Welcome Email Notification feature. ✅
+
