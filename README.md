@@ -46,7 +46,7 @@ The project is structured into two main parts: the front-end and the back-end.
 
 ### Week 2:
 - Implement feature: Welcome Email Notification for new users. ✅
-- Design architecture diagram for the project.
+- Design architecture diagram for the project. ✅
 - Configure continuous integration with GitHub repository.
 - Create Postman collection for testing User Authentication endpoints.
 - Develop Unit Tests for Welcome Email Notification feature. ✅
