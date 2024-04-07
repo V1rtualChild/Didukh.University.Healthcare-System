@@ -1,15 +1,7 @@
-const mysql = require('mysql');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
-const db = mysql.createConnection({
-    host: process.env.DATABASE_HOST,
-    user: process.env.DATABASE_USER,
-    password: process.env.DATABASE_PASSWORD,
-    database: process.env.DATABASE
-});
-
-exports.register = async (req, res) => {
+exports.register = async (db, req, res) => { // Додайте db як аргумент
     console.log(req.body);
 
     const { name, email, password, passwordConfirm } = req.body;
@@ -46,7 +38,7 @@ exports.register = async (req, res) => {
             } else {
                 console.log(results);
                 // !!! Перенаправлення на іншу сторінку >>>>>>>
-                return res.redirect('/success-page');
+                return res.redirect('/profile');
             }
         });
     } catch (error) {

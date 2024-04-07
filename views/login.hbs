@@ -34,37 +34,31 @@
 
         <div class="block_rigth">
             <div class="text-h2">
-                <h2>Create an account</h2>
+                <h2>Log in</h2>
                 <!-- <img src="./img/logoipsum-297 1.png" alt=""> -->
             </div>
             <div class="form-container">
                 <form class="form" action="/auth/register" method="POST">
-                    <input type="text" id="name" name="name" required placeholder="Name">
+                    {{!-- <input type="text" id="name" name="name" required placeholder="Name"> --}}
                     <input type="email" id="email" name="email" required placeholder="Email">
                     <input type="password" id="password" name="password" required placeholder="Password">
-                    <input type="password" id="passwordConfirm" name="passwordConfirm" required
-                        placeholder="Confirm your password">
+                    {{!-- <input type="password" id="passwordConfirm" name="passwordConfirm" required
+                        placeholder="Confirm your password"> --}}
                     <div class="button-container">
                         <div class="button-signUp">
-                            <button type="submit" class="">Sign up</button>
+                            <button type="submit" class="">Sign in</button>
                         </div>
 
                         <div class="btn-signUp-google">
                             <a href="#" class="google-link" onclick="signIn()">
-                                <img class="logo-png" src="/img/google.png" alt="">Sign up with Google
+                                <img class="logo-png" src="/img/google.png" alt="">Sign in with Google
                             </a>
                         </div>
                     </div>
-                    {{#if message }}
-                    <h4 class="alert alert-danger mt-4">{{message}}</h4>
-                    {{/if }}
                 </form>
 
                 <div class="sing-in">
-                    <p class="terms">By continuing, you agree to HealthCare System Company’s <b>Terms of Use</b> and
-                        <b>Privacy Policy.</b>
-                    </p>
-                    <p>Already have an account? <a href="/login">Log in</a></p>                    
+                    <p>Don’t you have an account? <a href="/register">Sign up</a></p>                    
                 </div>
             </div>
         </div>

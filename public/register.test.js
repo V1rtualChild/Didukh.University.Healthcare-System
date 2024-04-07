@@ -42,7 +42,7 @@ describe('Registration Page', () => {
   });
 
   it('should have a link to login page', () => {
-    const loginLink = document.querySelector('.sing-in a[href=""]');
+    const loginLink = document.querySelector('.sing-in a[href="/login"]');
     expect(loginLink).toBeTruthy();
   });
 });
