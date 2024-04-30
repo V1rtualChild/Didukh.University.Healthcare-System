@@ -64,10 +64,26 @@ The project is structured into two main parts: the front-end and the back-end.
 - Conduct load testing on telemedicine capabilities.
 - Update README.md file with project architecture overview.
 - Develop Unit Tests for Telemedicine Capabilities.
-- 
+  
 ## Week 7:
 - Implement feature: Appointment Scheduling system. ✅
 - Perform cross-browser compatibility testing.
 - Conduct performance tuning and optimization.
 - Document project tasks decomposition for future iterations.
 - Develop Unit Tests for Appointment Scheduling.
+
+## Week 8:
+
+- Implement feature: Medication Management module. ✅
+- Implement error handling and exception logging.
+- Conduct regression testing for existing features.
+- Update README.md file with troubleshooting guide.
+- Develop Unit Tests for Medication Management.
+
+
+## Week 9:
+- Implement feature: Health Education Resources integration. ✅
+- Perform accessibility testing for the application.
+- Conduct user feedback sessions for improvements.
+- Document project tasks and progress for stakeholders.
+- Develop Unit Tests for Health Education Resources.
