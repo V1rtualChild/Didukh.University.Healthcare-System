@@ -1,5 +1,5 @@
 const express = require('express');
-const path = require('path')
+const path = require('path');
 const mysql = require('mysql');
 const dotenv = require('dotenv');
 const nodemailer = require('nodemailer');
@@ -8,12 +8,28 @@ dotenv.config({ path: './.env' });
 
 const app = express();
 
-const db = mysql.createConnection({
-    host: process.env.DATABASE_HOST,
-    user: process.env.DATABASE_USER,
-    password: process.env.DATABASE_PASSWORD,
-    database: process.env.DATABASE
-});
+// Ініціалізація з'єднання з базою даних
+let db;
+
+if (process.env.DATABASE_HOST && process.env.DATABASE_USER && process.env.DATABASE_PASSWORD && process.env.DATABASE) {
+    db = mysql.createConnection({
+        host: process.env.DATABASE_HOST,
+        user: process.env.DATABASE_USER,
+        password: process.env.DATABASE_PASSWORD,
+        database: process.env.DATABASE
+    });
+
+    db.connect((error) => {
+        if (error) {
+            console.error("Error connecting to the database:", error);
+            console.log("Continuing without database connection...");
+        } else {
+            console.log("MySQL Connected...");
+        }
+    });
+} else {
+    console.log("Database connection not configured. Running without database.");
+}
 
 const authController = require('./controllers/auth');
 
@@ -25,14 +41,6 @@ app.use(express.json());
 
 app.set('view engine', 'hbs');
 
-db.connect((error) => {
-    if (error) {
-        console.log("Error connecting to the database:", error);
-    } else {
-        console.log("MySQL Connected...");
-    }
-});
-
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -42,7 +50,10 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post('/auth/register', (req, res) => {
-    authController.register(db, req, res); // Передача db
+    if (db) {
+        authController.register(db, req, res); // Передача db, якщо підключення до бази є
+    }
+
     const { email } = req.body;
     const mailOptions = {
         from: 'healthcare.system.auth@gmail.com',
